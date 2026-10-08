@@ -372,7 +372,7 @@ Ce projet est distribué sous licence **MIT**. Voir le fichier [LICENSE](LICENSE
 
 **Ortipik** — pour [OMEGA-server](https://kraynux.snake-mackarel.ts.net)
 
-- 🌐 Page: [orti-wall](https://kraynux.snake-mackarel.ts.net/public/scripts/Firewall-manager-nftables-iptables-fail2ban.html)
+- 🌐 Page: [orti-wall](https://kraynux.snake-mackarel.ts.net/orti-wall)
 - 🐙 GitHub : [@Ortipik](https://github.com/Ortipik)
 ---
 
