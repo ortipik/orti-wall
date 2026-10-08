@@ -1,0 +1,63 @@
+# ----------------------------------------------------------------------
+# orti-wall — fichiers a ne jamais publier
+# ----------------------------------------------------------------------
+# Le script journalise dans /var/log/firewall-manager.log (hors depot) et
+# agit sur la config systeme. Ce qui suit protege les dumps et exports
+# faits DANS le dossier du projet : une regle nftables, une blacklist ou
+# un jail fail2ban reels decrivent VOTRE infrastructure (IP, ports,
+# services exposes) — rien de tout ca n'a sa place dans un depot public.
+
+# Journaux du script et traces locales
+*.log
+*.log.*
+
+# Dumps et exports de regles (nftables / iptables / ipset)
+*.nft
+*.rules
+*.ipset
+nftables.conf*
+iptables*.save
+iptables*.dump
+ruleset*.txt
+
+# Listes d'adresses (blacklist/whitelist/honeypot) reelles
+blacklist*.txt
+whitelist*.txt
+banlist*.txt
+*.ips
+
+# Sauvegardes de configuration produites avant modification
+backups/
+/sauvegardes/
+*.conf.bak
+*.conf.orig
+jail.local
+*.tar
+*.tar.gz
+*.tgz
+
+# Sauvegardes d'editeur (vim/gedit/nano : README.md~, orti-wall.sh~, LICENSE~...)
+*~
+*.bak
+*.orig
+.*.swp
+*.swp
+*.swo
+
+# Configuration d'editeur / IDE
+.vscode/
+.idea/
+
+# Secrets et reglages locaux
+.env
+*.local
+*.secret
+
+# Fichiers systeme
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+
+# Archives de release
+*.zip
